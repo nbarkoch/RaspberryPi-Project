@@ -1,0 +1,163 @@
+﻿  Source.cpp
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(46): warning C4018: '<': signed/unsigned mismatch
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(85): warning C4018: '<': signed/unsigned mismatch
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(109): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(110): warning C4244: '=': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(111): warning C4244: '=': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(112): warning C4244: '=': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(113): warning C4244: '=': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(131): warning C4244: '=': conversion from '_Tp' to 'float', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(132): warning C4244: '=': conversion from '_Tp' to 'float', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(170): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(171): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(186): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(185): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(199): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(198): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(212): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(211): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(226): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(225): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(235): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(236): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(240): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(241): warning C4244: 'argument': conversion from '_Tp' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+          and
+          [
+              _Tp=float
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(438): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+c:\users\naorb\source\repos\consoleappcrossrailsdetection\consoleappcrossrailsdetection\source.cpp(441): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+opencv_world412d.lib(opencv_world412d.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'

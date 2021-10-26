@@ -1,0 +1,87 @@
+.camera-wrapper
+{
+  display: grid;
+  padding: 5px;
+  // width: 300px;
+  // height: 150px;
+  width: 360px;
+  height: auto;
+  grid-template-rows: 1fr 1fr 3fr;
+  margin-bottom: 35px;
+
+
+
+
+  .camera-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #177794;
+
+    color: white;
+    font-size: 15pt;
+
+  }
+
+  .alerts-wrapper{
+    background-color: #d3e9ff;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+
+
+  .camera-image{
+    display: flex;
+    align-items: start;
+    font-family: monospace;
+    font-size: 15pt;
+    justify-content: center;
+
+    // background-color: green;
+
+    border: 1px dashed black;
+
+  }
+
+
+  .camera-no-alerts{
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 30pt;
+    justify-content: center;
+
+    // background-color: green;
+
+    border: 1px dashed black;
+
+    .no-alerts{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      -ms-transform: skewY(20deg); /* IE 9 */
+      transform: skewY(20deg);
+    }
+  }
+
+
+  .s3-update{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    background-image: url('../../../../assets/no-image.jpg');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+
+  ::ng-deep .mat-tooltip
+{
+  background-color: rgb(8, 42, 61) !important;
+  margin-top: 40px !important;
+}
+}

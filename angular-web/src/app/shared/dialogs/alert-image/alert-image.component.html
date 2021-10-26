@@ -1,0 +1,16 @@
+<div class="dialog-wrapper">
+<h1 mat-dialog-title><mat-icon  matBadgeColor="warn">notification_important</mat-icon> {{data.station.city}} {{data.station.name != '-' ? (data.station.name) : ''}} | {{data.camera.name}} | {{data.camera.alerts[data.alertIndex].registeredDate | date:'dd/MM/yyyy HH:mm:ss'}}</h1>
+<div mat-dialog-content class="dialog-content">
+  <span>Detection Video:</span>
+  <div class="detection-data">
+    <!-- <img src="{{data.baseUrl}}{{data.camera.alerts[data.alertIndex].fileID}}.png" alt="Image Detection"> -->
+
+
+    <video style="width: -webkit-fill-available;" controls>
+      <source src="{{data.baseUrl}}{{data.camera.alerts[data.alertIndex].fileID}}.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</div>
+</div>

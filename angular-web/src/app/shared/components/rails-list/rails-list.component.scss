@@ -1,0 +1,24 @@
+.example-card {
+  max-width: 400px;
+}
+
+
+.data-grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  .station-data{
+    display: flex;
+    justify-content: center;
+
+    min-height: 320px;
+  }
+}
+
+.data-grid > app-rails-view{
+  padding: 10px;
+
+  // &:hover{
+  //   cursor: pointer;
+  // }
+}

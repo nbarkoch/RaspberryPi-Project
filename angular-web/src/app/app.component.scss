@@ -1,0 +1,39 @@
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-barber{
+  position: relative;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.menu-left
+{
+  border-left: 1px dotted black;;
+  padding-left: 10px;;
+  margin-left: 5px;
+}
+
+.menu-center
+{
+  margin: 0 auto;
+}
+
+.menu-right
+{
+  position: absolute;
+  right: 0px;
+}
+
+.router-link-active
+{
+  background-color: rgb(99, 149, 189);
+  color: white;;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}

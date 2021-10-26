@@ -1,0 +1,20 @@
+.dialog-wrapper{
+  display: grid;
+  grid-template-rows: 0fr 5fr;
+  // width: 1400px;
+  // height: 700px;
+}
+
+.dialog-content{
+  max-height: fit-content;
+}
+
+.detection-data{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detection-data > img{
+width: fill-available;
+}

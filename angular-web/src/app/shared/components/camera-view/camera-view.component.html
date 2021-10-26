@@ -1,0 +1,49 @@
+<div *ngIf="showMore" class="camera-wrapper">
+  <div class="camera-name">{{camera.name}}<mat-icon *ngIf="camera | alertCount; let countNotifications" [matBadge]="countNotifications" matBadgeColor="warn">notification_important</mat-icon></div>
+  <div class="alerts-wrapper">
+    <div class="alerts-selection"><mat-form-field appearance="">
+      <mat-label>Select an option</mat-label>
+      <mat-select [(value)]="selectedAlert">
+        <mat-option *ngFor="let alert of camera.alerts; let i = index" [value]="i">{{alert.registeredDate | date:'dd/MM/yyyy HH:mm:ss'}} {{i}} <mat-icon *ngIf="alert.seen == false" matBadgeColor="warn">notification_important</mat-icon></mat-option>
+      </mat-select>
+    </mat-form-field></div>
+    <div class="alert-image-icon" *ngIf="camera.alerts.length > 0 && camera.alerts[selectedAlert]?.s3Upload == true">
+      <!-- <img  src="../../../../assets/fall-icon.png" style="width: 30px;margin-left: 30px;"  matTooltip="Open Image" matTooltipPosition="right" alt=""> -->
+      <button mat-button (click)="openDialog()"><mat-icon>play_arrow</mat-icon>Watch Record</button>
+    </div>
+
+</div>
+
+<div *ngIf="camera.alerts.length > 0 && camera.alerts[selectedAlert]?.s3Upload == true" class="camera-image" style="background-image: url('{{baseURL}}{{camera.alerts[selectedAlert].fileID}}.png');background-size: contain;background-repeat: no-repeat;">
+
+    <!-- <video width="800" height="467" poster="media/example.png">
+      <source src="https://dcn846xxjowvv.cloudfront.net/s.avi">
+      https://cross-rails-detection.s3.us-east-2.amazonaws.com/photo.png
+<img src="https://cross-rails-detection.s3.us-east-2.amazonaws.com/photo.png" width="200px" height="200px">
+  </video>
+
+<video width="320" height="240" controls>
+  <source src="https://cross-rails-detection.s3.us-east-2.amazonaws.com/vid.avi" type="video/avi">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+
+-->
+<!-- <video width="400" height="270" controls>
+  <source src="{{baseURL}}{{camera.alerts[selectedAlert].fileID}}.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> -->
+  </div>
+
+
+<div *ngIf="camera.alerts.length == 0" class="camera-no-alerts"><div class="no-alerts">No Alerts</div></div>
+<div *ngIf="camera.alerts.length > 0 && !camera.alerts[selectedAlert]?.s3Upload" class="camera-image s3-update">Waiting to S3 update</div>
+
+
+
+
+</div>
+<div *ngIf="!showMore">
+  {{camera.name}}
+</div>

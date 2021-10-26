@@ -1,0 +1,58 @@
+.example-card {
+  max-width: 400px;
+}
+
+.station-detail{
+  // width: fit-content;
+
+  width: fill-available;
+  background-color: #c9ebff;
+  min-height: 120px;;
+  // display: grid;
+
+
+
+&:hover{
+  cursor: pointer;
+  background-color: #80d4f5;
+  // margin-bottom: 30px;
+}
+
+  .station-title{
+    min-height: 20px;;
+  }
+
+  .station-name{
+    width: fit-content;
+  }
+
+  .station-content{
+
+  }
+
+  .actions-stations{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+
+}
+
+
+
+::ng-deep .mat-tooltip
+{
+  background-color: rgb(8, 42, 61) !important;
+  margin-top: -40px !important;
+}
+
+
+.station-detail-expanded{
+  width: fit-content;;
+
+  .camera-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,26 @@
+<p>
+  <mat-toolbar>
+    <div class="logo-barber">
+      <img src="./assets/icon.png" style="width: 60px;height: 55px;"/>
+    </div>
+    <span>Cross Railways Detection System</span>
+    <!-- <div class="example-spacer"></div> -->
+    <div class="menu-left">
+      <a mat-button [routerLink]="['railways']" routerLinkActive="router-link-active"> Railways List </a>
+      <!-- <a *ngIf="!authClient" mat-button [routerLink]="['register']" routerLinkActive="router-link-active"> Register </a> -->
+      <!-- <a *ngIf="!authClient" mat-button [routerLink]="['login']" routerLinkActive="router-link-active"> Login </a> -->
+
+    </div>
+    <!-- <div class="menu-center" style="text-align: center;">
+      <span>asfas</span>
+    </div> -->
+    <!-- <div class="menu-right" *ngIf="authClient">
+      <span>Hello {{authClient.firstName}}, </span>
+      <button mat-button (click)="OnLogout()"> Logout? </button>
+    </div> -->
+  </mat-toolbar>
+</p>
+
+<div class="wrapper">
+<router-outlet></router-outlet>
+</div>

@@ -1,0 +1,60 @@
+
+
+
+<!-- <mat-icon>add_alert</mat-icon>
+error error icon	<mat-icon>error</mat-icon>
+error_outline error outline icon	<mat-icon>error_outline</mat-icon>
+notification_important notification important icon	<mat-icon>notification_important</mat-icon>
+warning warning icon	<mat-icon>warning</mat-icon> -->
+
+
+
+
+
+
+<!-- NOT EXPENDED -->
+<mat-card class="station-detail" (click)="ShowMore()" matTooltip="Click To Show More" matTooltipPosition="below" matTooltipClass="style-tooltip" *ngIf="!expanded && station">
+  <mat-card-title class="station-name">{{station.name != '-' ? station.name : station.city}}<mat-icon *ngIf="station | alertCount; let countNotifications" [matBadge]="countNotifications" matBadgeColor="warn">notification_important</mat-icon></mat-card-title>
+  <mat-card-subtitle class="station-title">{{station.name != '-' ? station.city : ''}}</mat-card-subtitle>
+  <mat-card-content class="station-content">
+    <p style="font-weight: bold;">Cameras</p>
+    <p *ngFor="let camera of station.cameras">
+      <app-camera-view [camera]="camera"></app-camera-view>
+    </p>
+  </mat-card-content>
+  <!-- <mat-card-actions class="actions-station">
+    <button mat-button (click)="ShowMore()">SHOW MORE</button>
+
+  </mat-card-actions> -->
+</mat-card>
+
+<mat-card class="station-detail" *ngIf="!expanded && !station">
+  NO STATION
+</mat-card>
+
+
+
+
+
+<!-- EXPANDED -->
+
+
+<mat-card class="station-detail-expanded" *ngIf="expanded && station">
+  <mat-card-title>{{station.name != '-' ? station.name : station.city}}</mat-card-title>
+  <mat-card-subtitle>{{station.name != '-' ? station.city : ''}}</mat-card-subtitle>
+  <mat-card-content>
+    <!-- <p style="font-weight: bold;">Cameras</p> -->
+    <div class="camera-list">
+      <app-camera-view *ngFor="let camera of station.cameras" [camera]="camera" [showMore]=true></app-camera-view>
+    </div>
+
+  </mat-card-content>
+  <mat-card-actions>
+    <!-- <button mat-button>SHOW MORE</button> -->
+    <!-- <button mat-button>SHARE</button> -->
+  </mat-card-actions>
+</mat-card>
+
+<mat-card class="station-detail" *ngIf="expanded && !station">
+  NO STATION
+</mat-card>
